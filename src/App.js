@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import BottomNav from './Components/Bottom Nav/BottomNav';
+//
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
+import Header from './Components/Header/Header';
+import ProfileCards from './Components/ProfileCards/ProfileCards';
+import Chats from './Components/Chats/Chats';
+import ChatScreen from './Components/Chats/ChatScreen';
+
+
+
+//---------------------COMPONENTT---------------------
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+
+      <Routes>
+        <Route path='/' element={<ProfileCards/>}/>
+
+        <Route path='/chats' element={<Chats/>} /> 
+        <Route path='/chatscreen' element={<ChatScreen/>}></Route>  
+      </Routes>      
+
+      <BottomNav/>
     </div>
   );
 }

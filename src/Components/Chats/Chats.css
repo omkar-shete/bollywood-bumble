@@ -1,0 +1,15 @@
+.chats{
+  /* background-color: aliceblue; */
+  padding: 1rem 25vw;
+}
+
+.chats > h2{
+  padding-bottom: 2rem;
+  text-align: center;
+  color: lightgray;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}

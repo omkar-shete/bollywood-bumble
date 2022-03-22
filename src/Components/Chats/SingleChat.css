@@ -1,0 +1,25 @@
+.singleChat{
+  display: flex;
+  /* justify-content: center; */
+  align-items:flex-end;
+  padding: 1rem 0;
+  border-top: 1px solid lightgray;
+}
+
+.singleChat__details{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pic{
+  margin-right: 1rem;
+}
+
+.singleChat__details > p {
+  color: gray;
+}
+
+.singleChat__timestamp{
+  color: gray;
+}
